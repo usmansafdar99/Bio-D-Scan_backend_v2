@@ -12,6 +12,7 @@ const beeDataSchema = new mongoose.Schema(
     "Humidity (%)": { type: Number },
     Longitude: { type: Number },
     Latitude: { type: Number },
+    Field: { type: String, enum: ["A", "B", "C", "D"], required: true },
   },
   { timestamps: true }
 );
